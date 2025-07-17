@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seven Império – Loja Oficial</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Seven Império 🌟</h1>
+    <p>Olá, Sejam Bem Vindos A Minha Loja Oficial (Seven Império)</p>
+    <p class="subtitulo">somos uma loja 100% segura e confiável</p>
+  </header>
+
+  <main>
+    <section id="produtos" class="grid">
+      <div class="produto">
+        <img src="images/raccoon.jpg" alt="Raccoon">
+        <h2>Raccoon</h2>
+        <p class="preco">R$ 9,90</p>
+        <button onclick="addCarrinho('Raccoon', 9.90)">Adicionar ao carrinho</button>
+      </div>
+      <div class="produto">
+        <img src="images/dragonfly.jpg" alt="Dragonfly">
+        <h2>Dragonfly</h2>
+        <p class="preco">R$ 9,90</p>
+        <button onclick="addCarrinho('Dragonfly', 9.90)">Adicionar ao carrinho</button>
+      </div>
+      <div class="produto">
+        <img src="images/3T.jpg" alt="3T Shekels">
+        <h2>3T Shekels</h2>
+        <p class="preco">R$ 4,90</p>
+        <button onclick="addCarrinho('3T Shekels', 4.90)">Adicionar ao carrinho</button>
+      </div>
+    </section>
+
+    <aside id="carrinho">
+      <h2>Carrinho</h2>
+      <ul id="itens"></ul>
+      <p>Total: R$ <span id="total">0.00</span></p>
+      <button id="checkoutBtn" disabled onclick="checkout()">Checkout</button>
+    </aside>
+
+    <section id="checkout" class="hidden">
+      <h2>Pagamento</h2>
+      <p>Siga os passos:</p>
+      <ol>
+        <li>Pague via Pix usando o QR Code abaixo</li>
+        <li>Depois adicione <strong>pontinho12222</strong> no Discord e envie:</li>
+        <ul>
+          <li><strong>ID do Pedido</strong></li>
+          <li><strong>Comprovante de pagamento</strong></li>
+        </ul>
+      </ol>
+      <div id="qr"><img src="images/pix-qr.png" alt="QR Code Pix"></div>
+      <p>Horário de atendimento:</p>
+      <ul>
+        <li>Seg–Sex: 13h–22h</li>
+        <li>Sáb–Dom: 10h–00h</li>
+      </ul>
+      <p class="alerta"><strong>Regras:</strong> Não mande comprovantes falsos, caso contrário se configura como crime.</p>
+
+      <section id="faq">
+        <h3>Perguntas Frequentes</h3>
+        <strong>Como faço o pagamento?</strong>
+        <p>Escolha os produtos, entre no carrinho e faça o pagamento. Logo depois aparecerá meu Discord, me adicione e mande o comprovante e o ID do pedido, e eu irei te entregar.</p>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Seven Império • Pagamento manual via Pix e comprovação pelo Discord</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
